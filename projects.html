@@ -179,13 +179,14 @@
                 <!-- Newsletter Form -->
                 <div class="col-md-3" id="newsletter">
                     <h4>Subscribe to Our Newsletter</h4>
-                    <form action="#" method="post">
+                    <form action="#" method="post" name="submit-to-google-sheet">
                         <div class="input-group">
-                            <input type="email" class="form-control form-control-sm" placeholder="Your Email"
-                                aria-label="Your Email" aria-describedby="subscribeBtn">
+                            <input type="email" name="Emails" class="form-control form-control-sm"
+                                placeholder="Your Email" aria-label="Your Email" aria-describedby="subscribeBtn">
                             <button class="btn btn-primary btn-sm" type="submit" id="subscribeBtn">Subscribe</button>
                         </div>
                     </form>
+                    <span class="bg-dark" id="msg2"></span>
                 </div>
 
                 <!-- Contact Information -->
@@ -201,7 +202,8 @@
                     <ul class="list-unstyled" id="follow-us">
                         <li><a href="https://www.facebook.com/profile.php?id=100088723290965&mibextid=ZbWKwL"
                                 class="text-light"><i class="bi bi-facebook"></i> Facebook</a></li>
-                        <li><a href="https://www.instagram.com/wanguphillip_bw/" class="text-light"><i class="bi bi-instagram"></i> Instagram</a></li>
+                        <li><a href="https://www.instagram.com/wanguphillip_bw/" class="text-light"><i
+                                    class="bi bi-instagram"></i> Instagram</a></li>
                         <li><a href="https://www.linkedin.com/in/wangu-phillip/" class="text-light"><i
                                     class="bi bi-linkedin"></i> LinkedIn</a></li>
                     </ul>
@@ -220,6 +222,26 @@
         </div>
     </footer>
     <!-- Footer Section End -->
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyhRZ7q5DabZ_SngZZMmGpY79smbjZClNZOPyMtLnybMkzgNNiDbsqGZSSm8N-kyalkBw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg2 = document.getElementById('msg2')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg2.innerHTML = "Thank you for subscribing!"
+                    setTimeout(function () {
+                        msg2.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
 
     <!--Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

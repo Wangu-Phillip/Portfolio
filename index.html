@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Wangu Phillip's Portfolio">
-    <meta name="keywords" content="waphil, wangu phillip, portfolio, web development, app development, software developer">
+    <meta name="keywords"
+        content="waphil, wangu phillip, portfolio, web development, app development, software developer">
     <meta name="author" content="Wangu Phillip">
     <title>Wangu Phillip - Web Development Portfolio</title>
 
@@ -51,8 +52,8 @@
                 <a class="navbar-brand" href="index.html"><img id="nav-logo" src="assets/images/waphil_logo.png"
                         alt="Waphil logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon bg-white"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -100,7 +101,8 @@
                 <!-- Service Cards -->
                 <div class="col-6 col-md-4 mb-4">
                     <div class="card shadow rounded-2" id="services-card">
-                        <img src="./assets/images/app-development.png" class="card-img-top" alt="Web Development Services">
+                        <img src="./assets/images/app-development.png" class="card-img-top"
+                            alt="Web Development Services">
                         <div class="card-body">
                             <h5 class="card-title">Web Development</h5>
                             <p class="card-text">Crafting responsive and dynamic websites tailored to your needs.</p>
@@ -132,7 +134,8 @@
 
                 <div class="col-6 col-md-4 mb-4">
                     <div class="card shadow rounded-2" id="services-card">
-                        <img src="./assets/images/coding.png" class="card-img-top" alt="Custom Software Development Services">
+                        <img src="./assets/images/coding.png" class="card-img-top"
+                            alt="Custom Software Development Services">
                         <div class="card-body">
                             <h5 class="card-title">Custom Software Development</h5>
                             <p class="card-text">Designing tailored software solutions to meet your specific business
@@ -177,7 +180,8 @@
                             <div class="col-md-6">
                                 <!-- Image container with ribbon -->
 
-                                <img src="./assets/images/projects/Ecommerce_App.png" class="card-img" alt="Ecommerce App">
+                                <img src="./assets/images/projects/Ecommerce_App.png" class="card-img"
+                                    alt="Ecommerce App">
                             </div>
                             <div class="col-md-6">
                                 <div class="card-body">
@@ -201,7 +205,8 @@
                     <div class="card  h-100 rounded-2">
                         <div class="row g-0">
                             <div class="col-md-6">
-                                <img src="./assets/images/projects/Desktop3.png" class="card-img" alt="UB Internship Management System">
+                                <img src="./assets/images/projects/Desktop3.png" class="card-img"
+                                    alt="UB Internship Management System">
                             </div>
                             <div class="col-md-6">
                                 <div class="card-body">
@@ -211,8 +216,8 @@
                                         <strong>Technologies
                                             Used:</strong> Flutter, Firebase
                                     </p>
-                                    <a href="https://github.com/Waphill/UB-Internship-System" target="_blank" class="btn btn-dark"><i
-                                            class="bi bi-github"></i> GitHub</a>
+                                    <a href="https://github.com/Waphill/UB-Internship-System" target="_blank"
+                                        class="btn btn-dark"><i class="bi bi-github"></i> GitHub</a>
                                     <a href="#" class="btn btn-success disabled"><i class="bi bi-link-45deg"></i> Live
                                         Demo</a>
                                 </div>
@@ -594,13 +599,14 @@
                 <!-- Newsletter Form -->
                 <div class="col-md-3" id="newsletter">
                     <h4>Subscribe to Our Newsletter</h4>
-                    <form action="#" method="post">
+                    <form action="#" method="post" name="submit-to-google-sheet">
                         <div class="input-group">
-                            <input type="email" class="form-control form-control-sm" placeholder="Your Email"
-                                aria-label="Your Email" aria-describedby="subscribeBtn">
+                            <input type="email" name="Emails" class="form-control form-control-sm"
+                                placeholder="Your Email" aria-label="Your Email" aria-describedby="subscribeBtn">
                             <button class="btn btn-primary btn-sm" type="submit" id="subscribeBtn">Subscribe</button>
                         </div>
                     </form>
+                    <span class="bg-dark" id="msg2"></span>
                 </div>
 
                 <!-- Contact Information -->
@@ -665,6 +671,26 @@
             document.getElementById("appServicesBtn").classList.remove("active");
         });
 
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyhRZ7q5DabZ_SngZZMmGpY79smbjZClNZOPyMtLnybMkzgNNiDbsqGZSSm8N-kyalkBw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg2 = document.getElementById('msg2')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg2.innerHTML = "Thank you for subscribing!"
+                    setTimeout(function () {
+                        msg2.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
     </script>
 
     <!-- Google Tag Manager (noscript) -->

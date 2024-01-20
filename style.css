@@ -223,6 +223,12 @@ h2 {
   display: block;
 }
 
+#msg2 {
+  color: #61b752;
+  margin-top: 5px;
+  display: block;
+}
+
 #spinner {
   display: none;
 }
