@@ -200,6 +200,9 @@ footer a:hover {
   left: 0;
 }
 
+.package-contact {
+  text-decoration: none;
+}
 
 /* HOMEPAGE END */
 h2 {
