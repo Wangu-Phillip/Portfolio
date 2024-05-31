@@ -28,6 +28,13 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css">
     <!--Google Fonts-->
 
+
+    <!--Font Awesome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Font Awesome Icons-->
+
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
@@ -171,9 +178,37 @@
     <!--Portfolio section start-->
     <section id="portfolio2" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-5">Portfolio</h2>
+            <h2 class="text-center mb-5">Portfolio</span></h2>
             <div class="row">
                 <!-- Project Cards -->
+
+                <!--Project 1-->
+                <div class="col-md-6 mb-4">
+                    <div class="card  h-100 rounded-2">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <img src="./assets/images/Hen-Vision.png" class="card-img"
+                                    alt="Data Analytics & Visualization of Poultry Data Mobile App">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Data Analytics & Visualization of Poultry Data Mobile App</h5>
+                                    <p class="card-text">The mobile app offers a robust solution for managing and
+                                        visualizing poultry finance and
+                                        operations data.... <br> <br>
+                                        <strong>Technologies
+                                            Used:</strong> Flutter, Firebase
+                                    </p>
+                                    <a href="#" target="_blank"
+                                        class="btn btn-dark disabled"><i class="bi bi-github"></i> GitHub</a>
+                                    <a href="#" class="btn btn-success"><i class="bi bi-download"></i> Download</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Project 2-->
                 <div class="col-md-6 mb-4">
                     <div class="card  h-100 rounded-2">
                         <div class="row g-0">
@@ -185,46 +220,21 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="card-body">
-                                    <h5 class="card-title" id="Ecommerce_App">Ecommerce App</h5>
-                                    <p class="card-text">E-commerce app designed <br>exclusively for shoe enthusiasts!
+                                    <h5 class="card-title" id="Ecommerce_App">Ecommerce Mobile App</h5>
+                                    <p class="card-text">E-commerce app designed <br>exclusively for shoe enthusiasts...
                                         <br>
                                         <br> <br> <br> <br>
                                         <strong>Technologies Used:</strong> Flutter, Firebase
                                     </p>
                                     <a href="https://github.com/Waphill" target="_blank"
                                         class="btn btn-dark disabled"><i class="bi bi-github"></i> GitHub</a>
-                                    <a href="#" class="btn btn-success disabled"><i class="bi bi-link-45deg"></i> Live
-                                        Demo</a>
+                                    <a href="#" class="btn btn-success disabled"><i class="bi bi-download"></i> Download</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6 mb-4">
-                    <div class="card  h-100 rounded-2">
-                        <div class="row g-0">
-                            <div class="col-md-6">
-                                <img src="./assets/images/projects/Desktop3.png" class="card-img"
-                                    alt="UB Internship Management System">
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-body">
-                                    <h5 class="card-title">UB Internship Management System</h5>
-                                    <p class="card-text">A comprehensive web application designed for efficiently
-                                        managing intern programs for University of Botswana. <br> <br>
-                                        <strong>Technologies
-                                            Used:</strong> Flutter, Firebase
-                                    </p>
-                                    <a href="https://github.com/Waphill/UB-Internship-System" target="_blank"
-                                        class="btn btn-dark"><i class="bi bi-github"></i> GitHub</a>
-                                    <a href="#" class="btn btn-success disabled"><i class="bi bi-link-45deg"></i> Live
-                                        Demo</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
                 <!-- Add more projects as needed -->
             </div>
@@ -247,7 +257,8 @@
             <h2 class="text-center">Explore Our Packages</h2>
             <p class="text-center text-muted">Please note that the prices below are for the pre-packaged services only.
                 Any additional features requested by the customer will incur extra charges. For custom software
-                development, pricing will depend on the complexity of the system. <a class="package-contact" href="contact.html">contact us</a></p>
+                development, pricing will depend on the complexity of the system. <a class="package-contact"
+                    href="contact.html">contact us</a></p>
             <!-- Toggle buttons Start -->
             <div class="container text-center mb-4">
                 <div class="btn-group" role="group">
@@ -262,11 +273,12 @@
                 <!-- Package Cards -->
                 <div class="col-md-4 mb-4">
                     <div class="card h-100 price-card shadow">
-                        <div class="position-relative">
+                        <!-- <div class="position-relative">
+                            Popular Ribbon
                             <div class="ribbon">
                                 <span>Popular</span>
                             </div>
-                        </div>
+                        </div> -->
                         <img src="./assets/images/vintage.png" class="card-img-top mx-auto" alt="silver package"
                             style="width: 50px;">
                         <div class="card-body">
@@ -286,7 +298,7 @@
                                 <li class="list-group-item"><i class="bi bi-check2 check-icon text-success"></i> Contact
                                     Form Integration</li>
                                 <li class="list-group-item"><i class="bi bi-x check-icon text-danger"></i> Social Media
-                                    Links Integration</li>
+                                    Integration</li>
                                 <li class="list-group-item"><i class="bi bi-x check-icon text-danger"></i> Newsletter
                                     Integration</li>
                                 <li class="list-group-item"><i class="bi bi-x check-icon text-danger"></i> User Accounts
@@ -294,17 +306,17 @@
                                 <li class="list-group-item"><i class="bi bi-check2 check-icon text-success"></i> 3
                                     Months Web Maintenance
                                 </li>
-                                <li class="list-group-item"><i class="bi bi-x check-icon text-danger"></i> Free domain name 
+                                <li class="list-group-item"><i class="bi bi-x check-icon text-danger"></i> Free domain
+                                    name
                                 </li>
                                 <!-- <li class="list-group-item"><i class="bi bi-check2 check-icon text-success"></i>
                                     Delivery in 2-3 weeeks</li> -->
                             </ul>
 
                             <div class="card-footer border-0 text-center mt-2" id="basic-plan">
-                                <li class="list-group-item">Starting at <br><span id="price">$109.99</span> (one-time
-                                    fee)
+                                <li class="list-group-item">Starting from <br><span id="price">P1,499.90</span>
                                 </li>
-                                <a href="contact.html?Plan=Basic Plan - Starter Website&PricePlan=109"
+                                <a href="contact.html?Plan=Basic Plan - Starter Website&PricePlan=1,499"
                                     class="btn btn-primary mt-3 ">Get Started</a>
                             </div>
                         </div>
@@ -313,6 +325,12 @@
 
                 <div class="col-md-4 mb-4">
                     <div class="card h-100 price-card shadow">
+                        <div class="position-relative">
+                            <!--Popular Ribbon-->
+                            <div class="ribbon">
+                                <span>Popular</span>
+                            </div>
+                        </div>
                         <img src="./assets/images/coin.png" class="card-img-top mx-auto" alt="Premium package"
                             style="width: 50px;">
                         <div class="card-body">
@@ -337,15 +355,15 @@
                                 </li>
                                 <li class="list-group-item"><i class="bi bi-check2 check-icon text-success"></i> User
                                     Accounts & Authentication</li>
-                                <li class="list-group-item"><i class="bi bi-check2 check-icon text-success"></i> Free domain name (for 1 year)</li>
+                                <li class="list-group-item"><i class="bi bi-check2 check-icon text-success"></i> Free
+                                    domain name (for 1 year)</li>
                                 <!-- <li class="list-group-item"><i class="bi bi-check2 check-icon text-success"></i>
                                     Delivery in 4-6 weeeks</li> -->
                             </ul>
                             <div class="card-footer border-0 text-center mt-4">
-                                <li class="list-group-item">Starting at <br> <span id="price">$328.99</span> (one-time
-                                    fee)
+                                <li class="list-group-item">Starting from <br> <span id="price">P4,499.90</span>
                                 </li>
-                                <a href="contact.html?Plan=Premium Plan - Business Website&PricePlan=328"
+                                <a href="contact.html?Plan=Premium Plan - Business Website&PricePlan=4,499"
                                     class="btn btn-primary mt-3 ">Get Started</a>
                             </div>
                         </div>
@@ -362,29 +380,31 @@
                             <p class="card-text mt-2">Tailored for businesses looking for advanced functionality.</p>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item"><i class="bi bi-check2 check-icon text-success"></i> Up to
-                                    15-Pages </li>
+                                    10+ Pages </li>
                                 <li class="list-group-item"><i class="bi bi-check2 check-icon text-success"></i>
                                     Responsive design</li>
-                                <li class="list-group-item"><i class="bi bi-check2 check-icon text-success"></i> User
-                                    authentication</li>
+                                <li class="list-group-item"><i class="bi bi-check2 check-icon text-success"></i> User Accounts &
+                                    Authentication</li>
                                 <li class="list-group-item"><i class="bi bi-check2 check-icon text-success"></i>
                                     Complete SEO Setup</li>
+                                    <li class="list-group-item"><i class="bi bi-check2 check-icon text-success"></i>
+                                        Shopping Cart & Checkout</li>
                                 <li class="list-group-item"><i class="bi bi-check2 check-icon text-success"></i>
-                                    Shopping Cart & Payment Gateway Integration</li>
+                                        Payment Gateway Integration</li>
                                 <li class="list-group-item"><i class="bi bi-check2 check-icon text-success"></i> 1 year
                                     Web Maintenance
                                 </li>
                                 <li class="list-group-item"><i class="bi bi-check2 check-icon text-success"></i> Product
-                                    Showcase & Categories</li>
-                                    <li class="list-group-item"><i class="bi bi-check2 check-icon text-success"></i> Free domain name (for 1 year)</li>
+                                    Catalogue</li>
+                                <li class="list-group-item"><i class="bi bi-check2 check-icon text-success"></i> Free
+                                    domain name (for 1 year)</li>
                                 <!-- <li class="list-group-item"><i class="bi bi-check2 check-icon text-success"></i>
                                     Delivery in 6-8 weeeks</li> -->
                             </ul>
                             <div class="card-footer border-0 text-center mt-4" id="enterprise-plan">
-                                <li class="list-group-item">Starting at <br><span id="price">$729.99</span> (one-time
-                                    fee)
+                                <li class="list-group-item">Starting at <br><span id="price">P9,999.90</span>
                                 </li>
-                                <a href="contact.html?Plan=Enterprise Plan - E-commerce Website&PricePlan=729"
+                                <a href="contact.html?Plan=Enterprise Plan - E-commerce Website&PricePlan=9,999"
                                     class="btn btn-primary mt-3 ">Get Started</a>
                             </div>
                         </div>
@@ -401,7 +421,8 @@
             <h2 class="text-center">Explore Our Packages</h2>
             <p class="text-center text-muted">Please note that the prices below are for the pre-packaged services only.
                 Any additional features requested by the customer will incur extra charges. For custom software
-                development, pricing will depend on the complexity of the system. <a class="package-contact" href="contact.html">contact us</a></p>
+                development, pricing will depend on the complexity of the system. <a class="package-contact"
+                    href="contact.html">contact us</a></p>
             <!-- Toggle buttons Start -->
             <div class="container text-center mb-4">
                 <div class="btn-group" role="group">
@@ -444,10 +465,9 @@
                             </ul>
 
                             <div class="card-footer border-0 text-center mt-5" id="app-basic-plan">
-                                <li class="list-group-item">Starting at <br><span id="price">$174.99</span> (one-time
-                                    fee)
+                                <li class="list-group-item">Starting from <br><span id="price">P2,399.90</span>
                                 </li>
-                                <a href="contact.html?Plan=Basic Plan - Starter App&PricePlan=174"
+                                <a href="contact.html?Plan=Basic Plan - Starter App&PricePlan=2,399"
                                     class="btn btn-primary mt-3 ">Get Started</a>
                             </div>
                         </div>
@@ -477,7 +497,7 @@
                                     Deployment</li>
                                 <li class="list-group-item"><i class="bi bi-check2 check-icon text-success"></i> User
                                     Authentication & Authorization</li>
-                                <li class="list-group-item"><i class="bi bi-check2 check-icon text-success"></i> In-App
+                                <li class="list-group-item"><i class="bi bi-x check-icon text-danger"></i> In-App
                                     Purchases</li>
                                 <li class="list-group-item"><i class="bi bi-check2 check-icon text-success"></i> 4
                                     Months App Maintenance
@@ -488,10 +508,9 @@
                                     Delivery in 6-8 weeks</li> -->
                             </ul>
                             <div class="card-footer border-0 text-center mt-5" id="app-standrad-plan">
-                                <li class="list-group-item">Starting at <br><span id="price">$364.99</span> (one-time
-                                    fee)
+                                <li class="list-group-item">Starting at <br><span id="price">P4,499.90</span>
                                 </li>
-                                <a href="contact.html?Plan=Standard Plan - Business App&PricePlan=364"
+                                <a href="contact.html?Plan=Standard Plan - Business App&PricePlan=4,499"
                                     class="btn btn-primary mt-3 ">Get Started</a>
                             </div>
                         </div>
@@ -528,10 +547,8 @@
                                     Delivery in 8-12 weeks</li> -->
                             </ul>
                             <div class="card-footer border-0 text-center mt-2" id="app-premium-plan">
-                                <li class="list-group-item">Starting at <br><span id="price">$743.99</span> (one-time
-                                    fee)
-                                </li>
-                                <a href="contact.html?Plan=Premium Plan - E-commerce App&PricePlan=743"
+                                <li class="list-group-item">Starting at <br><span id="price">P10,200</span></li>
+                                <a href="contact.html?Plan=Premium Plan - E-commerce App&PricePlan=10,200"
                                     class="btn btn-primary mt-3 ">Get Started</a>
                             </div>
                         </div>
