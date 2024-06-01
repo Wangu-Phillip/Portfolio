@@ -204,6 +204,19 @@ footer a:hover {
   text-decoration: none;
 }
 
+
+.custom-indicators button {
+    background-color: #000000; /* Default color for inactive indicators */
+    border-radius: 30%;
+    width: 12px;
+    height: 15px;
+}
+
+.custom-indicators .active {
+    background-color: #007bff; /* Color for the active indicator */
+}
+
+
 /* HOMEPAGE END */
 h2 {
   color: black;
