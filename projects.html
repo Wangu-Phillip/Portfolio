@@ -2,43 +2,41 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Waphil Tech Solutions">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Waphil Tech Solutions" />
     <meta name="keywords"
-        content="waphil, waphil tech solutions, waphil tech, portfolio, web development, app development, software developer">
-    <meta name="author" content="Wangu Phillip">
+        content="waphil, waphil tech solutions, waphil tech, portfolio, web development, app development, software developer" />
+    <meta name="author" content="Wangu Phillip" />
     <title>Waphil Tech Solutions</title>
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://waphil.me/">
-    <meta property="og:title" content="Waphil Tech Solutions">
-    <meta property="og:description" content="Waphil Tech Solutions">
-    <meta property="og:image" content="assets/images/waphil_logo.png">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://waphil.me/" />
+    <meta property="og:title" content="Waphil Tech Solutions" />
+    <meta property="og:description" content="Waphil Tech Solutions" />
+    <meta property="og:image" content="assets/images/waphil_logo.png" />
 
-    <link rel="icon" href="./assets/images/letter-w.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="./assets/images/letter-w.png" type="image/png" sizes="32x32" />
 
     <!--Bootstrap CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 
     <!--Google Fonts-->
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css" />
     <!--Google Fonts-->
 
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-
     <!--Navigation Bar start-->
     <header>
         <nav class="navbar navbar-expand-lg bg-white fs-6 shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img id="nav-logo" src="assets/images/waphil_logo.png"
-                        alt=" Waphil logo"></a>
+                        alt=" Waphil logo" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -46,7 +44,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item ">
+                        <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
@@ -58,6 +56,7 @@
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
                         </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -69,162 +68,188 @@
         <div class="container">
             <h2 class="text-center mb-5">Previous Projects Worked On</h2>
 
-            <!-- Project 1 -->
-            <div class="mb-5">
-                <h3>1. Data Analytics & Visualization of Poultry Data Mobile App</h3>
-                <div class="row position-relative">
-                    <div class="col-md-6">
-                        <!-- Image container with ribbon -->
-                        <div class="position-relative">
-                            <!-- Add the ribbon -->
-                            <div class="ribbon">
-                                <span>Latest</span>
+            <div class="tabs">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" data-target="all">All</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-target="websites">Websites</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-target="mobile-apps">Mobile Apps</a>
+                    </li>
+                </ul>
+            </div>
+
+            <br><br>
+
+            <div class="project-section" id="all-projects">
+                <!-- Project 1 -->
+                <div class="mb-5" data-category="mobile-apps">
+                    <h3>
+                        Data Analytics & Visualization of Poultry Data Mobile App
+                    </h3>
+                    <div class="row position-relative">
+                        <div class="col-md-6">
+                            <!-- Image container with ribbon -->
+                            <div class="position-relative">
+                                <!-- Add the ribbon -->
+                                <div class="ribbon">
+                                    <span>Latest</span>
+                                </div>
+                                <!-- Image -->
+                                <img src="./assets/images/Hen-Vision.png" class="img-fluid shadow border-1 rounded-5"
+                                    alt="Data Analytics & Visualization Mobile App" />
                             </div>
-                            <!-- Image -->
-                            <img src="./assets/images/Hen-Vision.png" class="img-fluid shadow border-1 rounded-5"
-                                alt="Data Analytics & Visualization Mobile App">
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <p>
-                            <strong>Description:</strong> The mobile app offers a robust solution for managing and
-                            visualizing poultry finance and
-                            operations data. Designed for poultry managers and farmers, the app provides an intuitive
-                            interface for tracking income, expenses, and operational metrics. Key features include
-                            real-time data visualization through interactive charts, secure data storage with
-                            Firebase/Firestore, and comprehensive reporting tools. This app enhances decision-making,
-                            boosts efficiency, and ensures transparency in the poultry industry, making it an
-                            indispensable tool for modern poultry management.
-                        </p>
-                        <p>
-                            <strong>Tech Stack:</strong> React, Firebase
-                        </p>
-                        <!-- <p>
-                            <strong>Challenges:</strong> Ensuring real-time synchronization between the app and Firebase
-                            was challenging, especially when dealing with inventory updates. <br><br>
-                            <strong>Solution:</strong> I later implemented Firebase Cloud Firestore's real-time database
-                            features to automatically sync data between the app and the server.
-                        </p> -->
-                        <div>
-                            <!-- <a href="https://github.com/Waphill" target="_blank" class="btn btn-dark disabled"><i
-                                    class="bi bi-github"></i> GitHub Repository</a> -->
-                            <a href="https://drive.google.com/uc?export=download&id=1PMOpwUnPVejcgklWmkeKL2nreuAEcDsY
-                            " class="btn btn-success"><i class="bi bi-download"></i> Download</a><br><br>
-                            <p style="font-size: 0.875em; color: red;">
-                                Note: You may see a warning from Google Drive about this file being large or executable. This is a standard warning and the file is safe to download.
-                            </p>
-                            <p><strong>Installation:</strong> Allow installation settings on android using <strong>Package Installer</strong></p>
+                        <div class="col-md-6">
                             <p>
-                                <strong>For Demonstration purposes ONLY:</strong> <br> <strong>Email:</strong> test@gmail.com <br> <strong>Password:</strong> password
+                                <strong>Description:</strong> The mobile app offers a robust
+                                solution for managing and visualizing poultry finance and
+                                operations data. Designed for poultry managers and farmers,
+                                the app provides an intuitive interface for tracking income,
+                                expenses, and operational metrics. Key features include
+                                real-time data visualization through interactive charts,
+                                secure data storage with Firebase/Firestore, and comprehensive
+                                reporting tools. This app enhances decision-making, boosts
+                                efficiency, and ensures transparency in the poultry industry,
+                                making it an indispensable tool for modern poultry management.
                             </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="mb-5">
-                <h3>2. Ecommerce Mobile App</h3>
-                <div class="row position-relative">
-                    <div class="col-md-6">
-                        <!-- Image container with ribbon -->
-                        <div class="position-relative">
-                            <!-- Image -->
-                            <img src="./assets/images/projects/Ecommerce_App.png"
-                                class="img-fluid shadow border-1 rounded-5" alt="Ecommerce Mobile App">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <p>
-                            <strong>Description:</strong>The Shoe Ecommerce mobile app delivers a seamless and enjoyable shopping experience for
-                            footwear enthusiasts. Users can browse a wide range of shoes, filter by categories, brands,
-                            sizes, and prices, and view detailed product descriptions and high-quality images. The app
-                            features a secure checkout process, personalized recommendations, user reviews, and order
-                            tracking. With easy navigation and a user-friendly interface, our app makes finding and
-                            purchasing the perfect pair of shoes effortless and convenient.
-                        </p>
-                        <p>
-                            <strong>Tech Stack:</strong> Figma, Flutter, Firebase
-                        </p>
-                        <!-- <p>
+                            <p><strong>Tech Stack:</strong> React, Firebase</p>
+                            <!-- <p>
                             <strong>Challenges:</strong> Ensuring real-time synchronization between the app and Firebase
                             was challenging, especially when dealing with inventory updates. <br><br>
                             <strong>Solution:</strong> I later implemented Firebase Cloud Firestore's real-time database
                             features to automatically sync data between the app and the server.
                         </p> -->
-                        <div>
-                            <!-- <a href="https://github.com/Waphill" target="_blank" class="btn btn-dark disabled"><i
+                            <div>
+                                <!-- <a href="https://github.com/Waphill" target="_blank" class="btn btn-dark disabled"><i
                                     class="bi bi-github"></i> GitHub Repository</a> -->
-                            <a href="#" class="btn btn-success">Design Mockup</a>
+                                <a href="https://drive.google.com/uc?export=download&id=1PMOpwUnPVejcgklWmkeKL2nreuAEcDsY
+                            " class="btn btn-success"><i class="bi bi-download"></i> Download</a><br /><br />
+                                <p style="font-size: 0.875em; color: red">
+                                    Note: You may see a warning from Google Drive about this
+                                    file being large or executable. This is a standard warning
+                                    and the file is safe to download.
+                                </p>
+                                <p>
+                                    <strong>Installation:</strong> Allow installation settings
+                                    on android using <strong>Package Installer</strong>
+                                </p>
+                                <p>
+                                    <strong>For Demonstration purposes ONLY:</strong> <br />
+                                    <strong>Email:</strong> test@gmail.com <br />
+                                    <strong>Password:</strong> password
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Project 3 -->
-            <div class="mb-5">
-                <h3>3. University of Botswana Internship</h3>
-                <h3 class="ms-4"> Management System</h3>
-                <div class="row">
-                    <div class="col-md-6">
-                        <img src="./assets/images/projects/internship.png" class="img-fluid shadow border-1 rounded-5"
-                            alt="University of Botswana Internship Management System">
+                <!-- Project 2 -->
+                <div class="mb-5" data-category="mobile-apps">
+                    <h3>Ecommerce Mobile App</h3>
+                    <div class="row position-relative">
+                        <div class="col-md-6">
+                            <!-- Image container with ribbon -->
+                            <div class="position-relative">
+                                <!-- Image -->
+                                <img src="./assets/images/projects/Ecommerce_App.png"
+                                    class="img-fluid shadow border-1 rounded-5" alt="Ecommerce Mobile App" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <p>
+                                <strong>Description:</strong>The Shoe Ecommerce mobile app
+                                delivers a seamless and enjoyable shopping experience for
+                                footwear enthusiasts. Users can browse a wide range of shoes,
+                                filter by categories, brands, sizes, and prices, and view
+                                detailed product descriptions and high-quality images. The app
+                                features a secure checkout process, personalized
+                                recommendations, user reviews, and order tracking. With easy
+                                navigation and a user-friendly interface, our app makes
+                                finding and purchasing the perfect pair of shoes effortless
+                                and convenient.
+                            </p>
+                            <p><strong>Tech Stack:</strong> Figma, Flutter, Firebase</p>
+                            <!-- <p>
+                            <strong>Challenges:</strong> Ensuring real-time synchronization between the app and Firebase
+                            was challenging, especially when dealing with inventory updates. <br><br>
+                            <strong>Solution:</strong> I later implemented Firebase Cloud Firestore's real-time database
+                            features to automatically sync data between the app and the server.
+                        </p> -->
+                            <div>
+                                <!-- <a href="https://github.com/Waphill" target="_blank" class="btn btn-dark disabled"><i
+                                    class="bi bi-github"></i> GitHub Repository</a> -->
+                                <a href="#" class="btn btn-success">Design Mockup</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <p>
-                            <strong>Description:</strong> A comprehensive web application designed for efficiently
-                            managing intern programs for University of Botswana. This project focuses on providing a
-                            user-friendly interface for
-                            both administrators, Companies and interns to streamline the entire intern management
-                            process.
-                        </p>
-                        <p>
-                            <strong>Tech Stack:</strong> HTML, CSS, JavaScript, PHP, MySQL
-                        </p>
-                        <!-- <p>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="mb-5" data-category="websites">
+                    <h3>University of Botswana Internship Management System</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="./assets/images/projects/internship.png"
+                                class="img-fluid shadow border-1 rounded-5"
+                                alt="University of Botswana Internship Management System" />
+                        </div>
+                        <div class="col-md-6">
+                            <p>
+                                <strong>Description:</strong> A comprehensive web application
+                                designed for efficiently managing intern programs for
+                                University of Botswana. This project focuses on providing a
+                                user-friendly interface for both administrators, Companies and
+                                interns to streamline the entire intern management process.
+                            </p>
+                            <p>
+                                <strong>Tech Stack:</strong> HTML, CSS, JavaScript, PHP, MySQL
+                            </p>
+                            <!-- <p>
                             <strong>Features:</strong> <br>
                             <strong>Key Feature:</strong> Bridge gap between Companies and Students to apply for
                             internship/attachment on the web application. <br>
                             <strong>Task Management:</strong> User Management: Easily add, update, and remove intern
                             profiles.
                         </p> -->
-                        <div>
-                            <a href="https://github.com/Waphill/UB-Internship-System" target="_blank"
-                                class="btn btn-dark"><i class="bi bi-github"></i> GitHub Repository</a>
-                            <a href="#" class="btn btn-success disabled"><i class="bi bi-link-45deg"></i> View Live
-                                Demo</a>
+                            <div>
+                                <a href="https://github.com/Waphill/UB-Internship-System" target="_blank"
+                                    class="btn btn-dark"><i class="bi bi-github"></i> GitHub Repository</a>
+                                <a href="#" class="btn btn-success disabled"><i class="bi bi-link-45deg"></i> View Live
+                                    Demo</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Project 4 -->
-            <div class="mb-5">
-                <h3>4. Book Launch Website</h3>
-                <div class="row">
-                    <div class="col-md-6">
-                        <img src="./assets/images/projects/Book_Launch.png" class="img-fluid shadow border-1 rounded-5"
-                            alt="Book Launch Website">
-                    </div>
-                    <div class="col-md-6">
-                        <p>
-                            <strong>Description:</strong> Website for selling a book copy.
-                        </p>
-                        <p>
-                            <strong>Tech Stack:</strong> HTML, CSS, Javascript
-                        </p>
-                        <div>
-                            <a href="https://github.com/Wangu-Phillip/Book-Launch-Website" target="_blank"
-                                class="btn btn-dark disabled"><i class="bi bi-github"></i> GitHub Repository</a>
-                            <a href="#" class="btn btn-success disabled"><i class="bi bi-link-45deg"></i> View Live
-                                Demo</a>
+                <!-- Project 4 -->
+                <div class="mb-5" data-category="websites">
+                    <h3>Book Launch Website</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="./assets/images/projects/Book_Launch.png"
+                                class="img-fluid shadow border-1 rounded-5" alt="Book Launch Website" />
+                        </div>
+                        <div class="col-md-6">
+                            <p>
+                                <strong>Description:</strong> Website for selling a book copy.
+                            </p>
+                            <p><strong>Tech Stack:</strong> HTML, CSS, Javascript</p>
+                            <div>
+                                <a href="https://github.com/Wangu-Phillip/Book-Launch-Website" target="_blank"
+                                    class="btn btn-dark disabled"><i class="bi bi-github"></i> GitHub Repository</a>
+                                <a href="#" class="btn btn-success disabled"><i class="bi bi-link-45deg"></i> View Live
+                                    Demo</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Add more projects as needed -->
             </div>
-
-            <!-- Add more projects as needed -->
-
         </div>
     </section>
     <!-- Projects Section End -->
@@ -239,8 +264,10 @@
                     <form action="#" method="post" name="submit-to-google-sheet">
                         <div class="input-group">
                             <input type="email" name="Emails" class="form-control form-control-sm"
-                                placeholder="Your Email" aria-label="Your Email" aria-describedby="subscribeBtn">
-                            <button class="btn btn-primary btn-sm" type="submit" id="subscribeBtn">Subscribe</button>
+                                placeholder="Your Email" aria-label="Your Email" aria-describedby="subscribeBtn" />
+                            <button class="btn btn-primary btn-sm" type="submit" id="subscribeBtn">
+                                Subscribe
+                            </button>
                         </div>
                     </form>
                     <span class="bg-dark" id="msg2"></span>
@@ -257,48 +284,57 @@
                 <div class="col-6 col-md-2">
                     <h4>Follow Us</h4>
                     <ul class="list-unstyled" id="follow-us">
-                        <li><a href="https://www.facebook.com/profile.php?id=100088723290965&mibextid=ZbWKwL"
-                                class="text-light"><i class="bi bi-facebook"></i> Facebook</a></li>
-                        <li><a href="https://www.instagram.com/wanguphillip_bw/" class="text-light"><i
-                                    class="bi bi-instagram"></i> Instagram</a></li>
-                        <li><a href="https://www.linkedin.com/company/waphil-tech-solutions/about/?viewAsMember=true"
-                                class="text-light"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=100088723290965&mibextid=ZbWKwL"
+                                class="text-light"><i class="bi bi-facebook"></i> Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/wanguphillip_bw/" class="text-light"><i
+                                    class="bi bi-instagram"></i> Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/waphil-tech-solutions/about/?viewAsMember=true"
+                                class="text-light"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                        </li>
                     </ul>
                 </div>
-
             </div>
-
-
         </div>
 
         <div class="text-center mt-3">
             <!-- JavaScript to update the year -->
             <script>
-                document.write("&copy; " + new Date().getFullYear() + " Waphil Tech Solutions - Software Development Hub. All rights reserved.");
+                document.write(
+                    "&copy; " +
+                    new Date().getFullYear() +
+                    " Waphil Tech Solutions - Software Development Hub. All rights reserved."
+                );
             </script>
         </div>
     </footer>
     <!-- Footer Section End -->
 
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyhRZ7q5DabZ_SngZZMmGpY79smbjZClNZOPyMtLnybMkzgNNiDbsqGZSSm8N-kyalkBw/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg2 = document.getElementById('msg2')
+        const scriptURL =
+            "https://script.google.com/macros/s/AKfycbyhRZ7q5DabZ_SngZZMmGpY79smbjZClNZOPyMtLnybMkzgNNiDbsqGZSSm8N-kyalkBw/exec";
+        const form = document.forms["submit-to-google-sheet"];
+        const msg2 = document.getElementById("msg2");
 
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    msg2.innerHTML = "Thank you for subscribing!"
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            fetch(scriptURL, { method: "POST", body: new FormData(form) })
+                .then((response) => {
+                    msg2.innerHTML = "Thank you for subscribing!";
                     setTimeout(function () {
-                        msg2.innerHTML = ""
-                    }, 5000)
-                    form.reset()
-
+                        msg2.innerHTML = "";
+                    }, 5000);
+                    form.reset();
                 })
-                .catch(error => console.error('Error!', error.message))
-        })
+                .catch((error) => console.error("Error!", error.message));
+        });
     </script>
+
+    <script src="script.js"></script>
 
     <!--Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

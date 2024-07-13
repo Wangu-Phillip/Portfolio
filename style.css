@@ -256,7 +256,13 @@ h2 {
 /* ABOUT PAGE END */
 
 /* PROJECTS PAGE START */
+.tabs a {
+  color: #484747;
+}
 
+.tabs .active {
+  font-weight: bold;
+}
 /* PROJECTS PAGE END */
 
 
